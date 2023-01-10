@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form Tag</title>
+    <style type="text/css">
+        .redo{
+            color: red;
+        }
+        input:invalid{
+            outline: 2px solid rgba(255, 68, 0, 0.422);
+            
+        }
+        input:valid{
+            outline: 2px solid rgba(2, 255, 40, 0.521);
+            
+        }
+    </style>
+</head>
+    <body>
+        <input type="text" id="outside" placeholder="This is outside the form Tag">
+        <form action="" name="login" method="post">
+            <label for="username">Username<span class="redo">*</span></label>
+            <input type="text" name="username" id="username" />
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" required/>
+            <label for="mobile">mobile</label>
+            <input type="tel" name="mobile" id="mobile" autocomplete="off"/>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password"/>
+            <button type="submit">LogIn</button>
+        </form>
+    </body>
+ <script src="forms.js"></script>
+</html>
